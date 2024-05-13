@@ -1,0 +1,12 @@
+# Docker compose file for running the application
+version: '3.7'
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: rot26/status
+    command: npm start
+    ports:
+      - "3000:3000"
