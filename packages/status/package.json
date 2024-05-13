@@ -1,0 +1,12 @@
+{
+  "name": "status",
+  "version": "0.1.0",
+  "type":"module",
+  "description": "A simple node api server to test 200 OK Status",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "author": "Chris Coleman <chris@rot-26.com>",
+  "license": "ISC"
+}
