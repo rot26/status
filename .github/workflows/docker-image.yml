@@ -19,7 +19,7 @@ jobs:
       run: docker build . --file Dockerfile --tag docker.pkg.github.com/${{ github.repository }}/status:test
       # run: docker build . --file Dockerfile --tag docker.pkg.github.com/${{ github.repository }}/status:${{ steps.get_version.outputs.VERSION }}
     - name: Log in to GitHub Docker Registry
-      run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login docker.pkg.github.com -u ${{ github.actor }} --password-stdin
+      run: echo "${{ secrets.DOCKER_PUBLSIH }}" | docker login docker.pkg.github.com -u ${{ github.actor }} --password-stdin
     - name: Push the Docker image
       # run: docker push docker.pkg.github.com/${{ github.repository }}/status:${{ steps.get_version.outputs.VERSION }}
       run: docker push docker.pkg.github.com/${{ github.repository }}/status:test
