@@ -56,3 +56,17 @@ docker pull rot26/status
 ## Source
 
 [GitHub](https://github.com/rot26/status)
+
+## Helm
+
+Install the chart via Helm.
+
+```bash
+helm install status ./chart/status --namespace status
+```
+
+Upgrade the chart via Helm.
+
+```bash
+helm upgrade status ./chart/status --namespace status
+```
