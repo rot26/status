@@ -10,7 +10,13 @@ Just a health container for routing and testing purposes.
 docker run -d -p 3000:3000 rot26/status
 ```
 
-### Via Source
+### Via Local Docker-Compose
+
+```bash
+docker-compose up
+```
+
+### Via Source (Node, no Docker)
 
 ```bash
 cd packages/status
